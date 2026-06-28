@@ -60,17 +60,11 @@
                         <ul>
 
                             <li>🎤 Keynote Addresses</li>
-
                             <li>🎓 Guest Lectures</li>
-
                             <li>🏛 Academic Conferences</li>
-
                             <li>💬 Panel Discussions</li>
-
                             <li>📚 Professional Workshops</li>
-
                             <li>🤝 Research Collaborations</li>
-
                             <li>🌍 Policy & AI Advisory Sessions</li>
 
                         </ul>
@@ -104,7 +98,6 @@
                             <a href="https://www.linkedin.com/in/edmund-terem-ugar-phd-b565701b2/"
                                target="_blank"
                                rel="noopener noreferrer">
-                            </a>
 
                                 View LinkedIn Profile
 
@@ -120,12 +113,18 @@
 
                         <h3>Booking Enquiry</h3>
 
-                        <form>
+                        <form action="https://formspree.io/f/xqevbjep" method="POST">
+
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="New Booking Enquiry – Dr Edmund Terem Ugar Website">
 
                             <label>Full Name</label>
 
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Enter your full name"
                                 required>
 
@@ -133,35 +132,33 @@
 
                             <input
                                 type="text"
+                                name="organisation"
                                 placeholder="University / Company">
 
                             <label>Email Address</label>
 
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="name@example.com"
                                 required>
 
                             <label>Preferred Date</label>
 
-                            <input type="date">
+                            <input
+                                type="date"
+                                name="preferred_date">
 
                             <label>Type of Engagement</label>
 
-                            <select>
+                            <select name="engagement_type">
 
                                 <option>Keynote Address</option>
-
                                 <option>Conference</option>
-
                                 <option>Guest Lecture</option>
-
                                 <option>Workshop</option>
-
                                 <option>Panel Discussion</option>
-
                                 <option>Research Collaboration</option>
-
                                 <option>Other</option>
 
                             </select>
@@ -169,8 +166,10 @@
                             <label>Message</label>
 
                             <textarea
+                                name="message"
                                 placeholder="Tell us more about your event..."
-                                rows="7"></textarea>
+                                rows="7"
+                                required></textarea>
 
                             <button
                                 type="submit"
