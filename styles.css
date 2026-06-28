@@ -36,7 +36,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
 }
 
 .nav-container {
@@ -62,7 +62,7 @@ body {
 .nav-menu a {
     color: var(--white);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color .3s;
     font-weight: 500;
 }
 
@@ -90,7 +90,7 @@ main {
    =========================== */
 
 .hero {
-    background: linear-gradient(135deg, var(--secondary-color), #244d70);
+    background: linear-gradient(135deg,var(--secondary-color),#244d70);
     color: var(--white);
     padding: 4rem 2rem 5rem;
     text-align: center;
@@ -124,7 +124,7 @@ main {
     border-radius: 50%;
     border: 4px solid #ffffff;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
 }
 
 /* ===========================
@@ -133,59 +133,59 @@ main {
 
 .btn {
     display: inline-block;
-    background-color: var(--white);
+    background: var(--white);
     color: var(--secondary-color);
-    padding: 0.8rem 1.6rem;
+    padding: .8rem 1.6rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: .3s;
     border: 2px solid var(--white);
-    margin: 0.4rem;
+    margin: .4rem;
 }
 
 .btn:hover {
-    background-color: transparent;
+    background: transparent;
     color: var(--white);
 }
 
 .btn-small {
     display: inline-block;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: var(--white);
-    padding: 0.55rem 1.2rem;
+    padding: .55rem 1.2rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 0.9rem;
+    transition: .3s;
+    font-size: .9rem;
 }
 
 .btn-small:hover {
-    background-color: var(--hover-color);
+    background: var(--hover-color);
 }
 
 /* ===========================
-   FEATURES / RESEARCH FOCUS
+   FEATURES
    =========================== */
 
 .features {
-    background-color: var(--light-bg);
+    background: var(--light-bg);
     padding: 4rem 2rem;
 }
 
 .features .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 2rem;
 }
 
 .feature-box {
-    background-color: var(--white);
+    background: var(--white);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    transition: .3s;
     border-top: 4px solid var(--primary-color);
 }
 
@@ -194,9 +194,9 @@ main {
 }
 
 .feature-box h3 {
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
     color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
 }
 
 /* ===========================
@@ -225,6 +225,7 @@ main {
 
 .about-content {
     max-width: 850px;
+    margin: 0 auto;
 }
 
 .about-text h3 {
@@ -243,18 +244,19 @@ main {
 .skills-list {
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
 }
 
 .skills-list li {
     background-color: var(--light-bg);
     padding: 1rem;
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.75rem;
     border-left: 4px solid var(--primary-color);
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 /* ===========================
-   RESEARCH / PUBLICATIONS PAGE
+   RESEARCH / TEACHING / EVENTS
    =========================== */
 
 .portfolio-grid {
@@ -265,47 +267,182 @@ main {
 }
 
 .portfolio-item {
-    background-color: var(--white);
+    background: var(--white);
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 2rem;
 }
 
 .portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-image {
-    width: 100%;
-    height: 145px;
-    background: linear-gradient(135deg, var(--secondary-color), #244d70);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.placeholder-image {
-    font-size: 1.5rem;
-    color: var(--white);
-    font-weight: bold;
-    letter-spacing: 0.08em;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .portfolio-item h3 {
-    padding: 1rem 1rem 0.5rem;
     color: var(--secondary-color);
-    line-height: 1.35;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.portfolio-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
 }
 
 .portfolio-item p {
-    padding: 0 1rem 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.portfolio-item ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.portfolio-item ul li {
+    margin-bottom: .7rem;
+}
+
+.portfolio-item .btn-small,
+.portfolio-item .btn {
+    margin-top: 1rem;
+}
+
+/* ===========================
+   PUBLICATIONS
+   =========================== */
+
+.publication-year {
+    margin-bottom: 3rem;
+}
+
+.publication-year h3 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.publication {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.publication h4 {
+    color: var(--secondary-color);
+    margin-bottom: .8rem;
+    font-size: 1.25rem;
+}
+
+.publication p {
+    margin-bottom: 1rem;
     color: #555;
 }
 
-.portfolio-item .btn-small {
-    margin: 0 1rem 1.2rem;
+.publication .btn-small {
+    margin-top: .5rem;
+}
+
+/* ===========================
+   BOOKING PAGE
+   =========================== */
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.booking-info {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.booking-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.booking-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-info ul li {
+    margin-bottom: .9rem;
+}
+
+.booking-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.booking-info a:hover {
+    text-decoration: underline;
+}
+
+.booking-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.booking-form h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.booking-form .btn {
+    margin-top: 1.5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.booking-form .btn:hover {
+    background: var(--hover-color);
 }
 
 /* ===========================
@@ -314,13 +451,13 @@ main {
 
 .contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
     gap: 3rem;
     margin-top: 2rem;
 }
 
 .contact-info {
-    background-color: var(--light-bg);
+    background: var(--light-bg);
     padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid var(--primary-color);
@@ -338,7 +475,7 @@ main {
 .info-item strong {
     display: block;
     color: var(--secondary-color);
-    margin-bottom: 0.3rem;
+    margin-bottom: .4rem;
 }
 
 .info-item a {
@@ -350,7 +487,6 @@ main {
 .info-item a:hover {
     text-decoration: underline;
 }
-
 /* ===========================
    FOOTER
    =========================== */
@@ -363,15 +499,71 @@ footer {
     margin-top: 4rem;
 }
 
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ===========================
+   LINKS
+   =========================== */
+
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+}
+
+/* ===========================
+   FORM ELEMENTS
+   =========================== */
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
 /* ===========================
    RESPONSIVE DESIGN
    =========================== */
 
+@media (max-width: 992px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+}
+
 @media (max-width: 768px) {
+
+    /* Navigation */
+
     .nav-container {
         flex-direction: column;
         gap: 1rem;
         padding: 0 1rem;
+    }
+
+    .logo {
+        text-align: center;
     }
 
     .nav-menu {
@@ -380,8 +572,10 @@ footer {
         justify-content: center;
     }
 
+    /* Hero */
+
     .hero {
-        padding: 3.5rem 1.5rem 4rem;
+        padding: 3rem 1.5rem 4rem;
     }
 
     .hero-content h2 {
@@ -397,6 +591,12 @@ footer {
         height: 125px;
     }
 
+    /* General */
+
+    .container {
+        padding: 1.5rem;
+    }
+
     .content-section {
         padding: 3rem 1rem;
     }
@@ -405,7 +605,80 @@ footer {
         font-size: 2rem;
     }
 
-    .container {
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Cards */
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box,
+    .portfolio-item,
+    .publication,
+    .booking-info,
+    .booking-form,
+    .contact-info {
         padding: 1.5rem;
     }
+
+    /* Publications */
+
+    .publication-year h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Buttons */
+
+    .btn,
+    .btn-small {
+        width: 100%;
+        text-align: center;
+        margin: .5rem 0;
+    }
+
+    /* Booking Form */
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 16px;
+    }
+
 }
+
+@media (max-width: 480px) {
+
+    .hero-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .feature-box h3,
+    .portfolio-item h3,
+    .publication h4 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p,
+    .about-text p,
+    .portfolio-item p,
+    .publication p,
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+}
+
+/* ===========================
+   END OF STYLESHEET
+   =========================== */
