@@ -1,1 +1,32 @@
+backend:
+  name: github
+  repo: lesego-dev/edmund-ugar-portfolio
+  branch: cms-migration
 
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Venue", name: "venue", widget: "string", required: false }
+      - { label: "Theme", name: "theme", widget: "text", required: false }
+      - { label: "Presentation", name: "presentation", widget: "string", required: false }
+      - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options: ["Upcoming", "Recent"]
+        }
+      - { label: "Description", name: "description", widget: "text" }
