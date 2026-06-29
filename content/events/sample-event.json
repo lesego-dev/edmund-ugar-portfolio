@@ -1,1 +1,7 @@
-
+{
+  "title": "Sample Event",
+  "date": "2026-08-01",
+  "location": "Johannesburg",
+  "role": "Speaker",
+  "description": "This is a sample event."
+}
