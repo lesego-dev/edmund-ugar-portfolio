@@ -1,1 +1,23 @@
+{
+  "items": [
+    {
+      "title": "Sputnik Africa Podcast",
+      "date": "May 2026",
+      "programme": "Sputnik Africa Podcast",
+      "topic": "Technological Colonialism in Africa",
+      "description": "Featured guest discussing the ethical implications of technological colonialism and artificial intelligence in Africa.",
+      "link": "https://en.sputniknews.africa/20260515/the-hidden-costs-of-technological-colonialism-in-africa--1085760238.html",
+      "linkText": "Listen / Read"
+    },
+    {
+      "title": "Newzroom Afrika",
+      "date": "June 2023",
+      "programme": "NewzRoom Afrika",
+      "topic": "Artificial Intelligence in Africa",
+      "description": "Television interview discussing artificial intelligence, ethics and innovation across Africa.",
+      "link": "https://youtu.be/OpT2BbX-omE",
+      "linkText": "Watch Interview"
+    }
+  ]
+}
 
