@@ -1,1 +1,59 @@
+{
+  "items": [
+    {
+      "year": "2026",
+      "title": "Happiness in the AI Age",
+      "description": "Ricoeur and the question of the AI humanoid as the technological other.",
+      "sourceLabel": "Journal",
+      "sourceValue": "Philosophies",
+      "link": "https://doi.org/10.3390/philosophies11030083",
+      "linkText": "Read Publication"
+    },
+    {
+      "year": "2025",
+      "title": "Responsible AI in African Healthcare",
+      "description": "Promoting responsible AI in African healthcare by strengthening patient moral agency.",
+      "sourceLabel": "Journal",
+      "sourceValue": "Asian Bioethics Review",
+      "link": "https://doi.org/10.1007/s41649-025-00365-2",
+      "linkText": "Read Publication"
+    },
+    {
+      "year": "2024",
+      "title": "AI for Mental Health Diagnosis",
+      "description": "Designing ethical AI systems for mental health diagnosis in African healthcare settings.",
+      "sourceLabel": "Journal",
+      "sourceValue": "Journal of Medical Ethics",
+      "link": "https://jme.bmj.com/content/early/2024/02/19/jme-2023-109711",
+      "linkText": "Read Publication"
+    },
+    {
+      "year": "2023",
+      "title": "Worldwide AI Ethics",
+      "description": "A review of more than 200 AI ethics guidelines worldwide.",
+      "sourceLabel": "Journal",
+      "sourceValue": "Patterns",
+      "link": "https://doi.org/10.1016/j.patter.2023.100857",
+      "linkText": "Read Publication"
+    },
+    {
+      "year": "2023",
+      "title": "Meaningful Work and Automated Technologies",
+      "description": "Examining automation, meaningful work and the future of employment.",
+      "sourceLabel": "Journal",
+      "sourceValue": "Philosophy & Technology",
+      "link": "https://doi.org/10.1007/s13347-023-00634-7",
+      "linkText": "Read Publication"
+    },
+    {
+      "year": "2022",
+      "title": "AI and African Personhood",
+      "description": "Book chapter exploring artificial intelligence through African normative accounts of personhood.",
+      "sourceLabel": "Book",
+      "sourceValue": "Bioethics, Neuroethics & AI Ethics in a Post-Pandemic World",
+      "link": "",
+      "linkText": "View full CV"
+    }
+  ]
+}
 
