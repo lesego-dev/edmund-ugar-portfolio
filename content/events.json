@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "status": "upcoming",
+      "title": "University of Cape Town Ethics Lab Academic Retreat",
+      "role": "Invited Convener",
+      "date": "6–7 August 2026",
+      "location": "Stellenbosch, South Africa",
+      "theme": "Reimagining Responsibility: African Philosophy and the Ethics of Emerging Technologies"
+    },
+    {
+      "status": "recent",
+      "title": "North-West University Media Release",
+      "role": "Invited Moderator",
+      "date": "25 June 2026",
+      "location": "",
+      "theme": "AI in Africa's Classrooms: Empowering Education or an Overhyped Distraction?"
+    },
+    {
+      "status": "recent",
+      "title": "AI Collectives – Humans in AI Week",
+      "role": "Invited Speaker",
+      "date": "4 June 2026",
+      "location": "Barnard Inc Attorneys, Pretoria, South Africa",
+      "theme": "AI, Happiness and the Other"
+    }
+  ]
+}
