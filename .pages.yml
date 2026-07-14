@@ -1,0 +1,135 @@
+media: assets
+
+content:
+  - name: events
+    label: "📅 Events"
+    type: file
+    path: content/events.json
+    format: json
+    fields:
+      - name: items
+        label: Events
+        type: object
+        list: true
+        fields:
+          - name: status
+            label: Status
+            type: select
+            options:
+              values:
+                - value: upcoming
+                  label: Upcoming
+                - value: recent
+                  label: Recent / Past
+            default: upcoming
+          - name: title
+            label: Event Title
+            type: string
+          - name: role
+            label: Your Role
+            type: string
+            description: e.g. "Invited Speaker", "Keynote Convener"
+          - name: date
+            label: Date
+            type: string
+            description: e.g. "6–7 August 2026" or "25 June 2026"
+          - name: location
+            label: Location / Venue
+            type: string
+            required: false
+          - name: theme
+            label: Theme / Topic
+            type: text
+            required: false
+
+  - name: media
+    label: "🎤 Media Appearances"
+    type: file
+    path: content/media.json
+    format: json
+    fields:
+      - name: items
+        label: Media Appearances
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+            description: e.g. "Sputnik Africa Podcast"
+          - name: date
+            label: Date
+            type: string
+            description: e.g. "May 2026"
+          - name: programme
+            label: Programme / Outlet
+            type: string
+          - name: topic
+            label: Topic
+            type: string
+            required: false
+          - name: description
+            label: Description
+            type: text
+            required: false
+          - name: link
+            label: Link URL
+            type: string
+            required: false
+            description: Link to the interview, article or recording
+          - name: linkText
+            label: Link Button Text
+            type: string
+            required: false
+            description: e.g. "Watch Interview", "Listen / Read"
+
+  - name: publications
+    label: "📚 Publications"
+    type: file
+    path: content/publications.json
+    format: json
+    fields:
+      - name: items
+        label: Publications
+        type: object
+        list: true
+        fields:
+          - name: year
+            label: Year
+            type: string
+            description: e.g. "2026" — used to group publications on the page
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+            required: false
+          - name: sourceLabel
+            label: Source Label
+            type: string
+            description: e.g. "Journal" or "Book"
+          - name: sourceValue
+            label: Source Name
+            type: string
+            description: e.g. "Philosophies" or "Patterns"
+          - name: link
+            label: Link URL
+            type: string
+            required: false
+          - name: linkText
+            label: Link Button Text
+            type: string
+            required: false
+            description: e.g. "Read Publication"
+
+  - name: site
+    label: "📄 CV / Resume"
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: cv_file
+        label: CV File (PDF)
+        type: file
+        description: Upload a new CV to replace the current one — the "View CV" links on the site will update automatically.
